@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<style>
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    animation: rainbowFlash 2s steps(1) infinite;
+}
+
+@keyframes rainbowFlash {
+    0%   { background: red; }
+    16%  { background: orange; }
+    33%  { background: yellow; }
+    50%  { background: green; }
+    66%  { background: blue; }
+    83%  { background: purple; }
+    100% { background: red; }
+}
+
+h1{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+}
+
+
+.spinner {
+  display: inline-block;
+  animation: spin 5s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+</style>
+</head>
+
+<body>
+    <div class="spinner"><h1>Vous avez été Rainbowed</h1></div>
+
+</body>
+</html>
